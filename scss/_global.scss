@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+//nav
+html{
+    scroll-behavior: smooth;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    background: $blue;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: $white;
+    z-index: 9999;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease;
+    &.show{
+        bottom: 30px;
+        opacity: 1;
+        pointer-events: auto;
+    
+    }
+
+}
+
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    //background-color: $blue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    font-family: $ubuntu;
+    padding: 30px 0;
+    transition: all 300ms ease-in-out;
+
+
+
+    &.sticky{
+        padding: 15px 0;
+        background: $blue;
+    };
+
+    .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .menu li{
+        list-style: none;
+        display: inline-block;
+        a{
+            color: $white;
+            font-size:18px ;
+            font-weight: 500;
+            margin-left: 25px;
+            display: block;
+            transition: 300ms ease-in-out color;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+    .logo a{
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+        span{
+            color: yellow;
+        }
+        &:hover{
+            color: orange;
+        }
+    }
+}
+
+
+
+//at-root
+.about, .service, .skills, .teams, .contact, footer{
+    font-family: $poppins;
+}
+.about .about-content, .service .serv-content, .skills .skills-content, .contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding :0 80px;
+    margin: auto;
+}
+
+
+
+
+/*Home*/
+
+.home{
+    display: flex;
+    background: url('/assets/Home.jpg')no-repeat center;
+    color: $white;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    font-family: $ubuntu;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: $blue;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: $blue;
+    color: $white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid $blue;
+    transition: all 300ms ease-in-out;
+}
+.home .home-content a:hover{
+    background: none;
+    color: $blue;
+    padding: 12px 36px;
+    border-radius: 8px;
+    border: 2px solid $blue;
+}
+
+
+
+section{
+    padding: 100px 0;
+    .title{
+
+        font-family: $ubuntu;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 4px;
+            background: $black;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+        &::after{
+            position: absolute;
+            font-size: 20px;
+            padding: 5px;
+            left: 50%;
+            color: $blue;
+            background: $white;
+            bottom: -12px;
+            transform: translateX(-50%);
+        }
+
+
+
+    }
+}
+
+.about{
+    font-family: $poppins;
+
+    .title::after{
+       content: 'Perkenalkan';
+    }
+
+    .about-content .left img{
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .about-content{
+
+
+        .column{
+            width: 50%;
+        }
+
+        .left{ 
+            width: 45%;
+        }
+
+        .right{
+            width: 55%;
+
+            .text{
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                span{
+                    color: $blue;
+                }
+            }
+
+            p{
+                text-align: justify;
+            }
+
+            a{
+                display: inline-block;
+                background: $blue;
+                color: white;
+                font-size: 20px;
+                padding: 1px 30px;
+                margin-top: 20px;
+                border: 1px solid $blue;
+                border-radius: 8px;
+                transition: all 300ms ease-in-out;
+                &:hover{
+                    background: none;
+                    color: $blue;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}
+
+.service{
+    background-color: $black;
+    color: $white;
+    .title{
+        color: $white;
+        &::before{
+            background: $white;
+        }
+        &::after{
+            background-color: $black;
+            content: 'Saya Bisa';
+        }
+    }
+    .serv-content{
+
+
+        .card{
+            width: calc(33% - 20px);
+            background-color: $dgrey;
+            padding: 20px 25px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 300ms ease-in-out ;
+            &:hover{
+                background: $blue;
+                .box{
+                    transform: scale(1.05);
+                    
+                }
+
+                i{
+                    color: $white
+                }
+            }
+            .box{
+                transition: all 300ms ease-in-out;
+            }
+            
+
+            i{
+                font-size: 50px;
+                color: $blue;
+            }
+
+            .text{
+                font-size: 25px;
+                font-weight: 500;
+                margin: 10px 0 7px 0;
+            }
+        }
+    }
+}
+
+.skills{
+
+    .title{
+
+
+
+        &::after{
+            content: 'Saya Tahu';
+        }
+
+    }
+
+    .skills-content{
+
+        .column{
+            width: calc(50% - 30px);
+        }
+        .left{
+            .text{
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+            }
+            p{
+                text-align: justify;
+            }
+            a{
+                display: inline-block;
+                background: $blue;
+                color: white;
+                font-size: 18px;
+                padding: 1px 30px;
+                margin-top: 20px;
+                border: 1px solid $blue;
+                border-radius: 8px;
+                transition: all 300ms ease-in-out;
+                &:hover{
+                    background: none;
+                    color: $blue;
+                    font-weight: 500;
+
+                }
+            }
+        }
+
+        .right{
+            .bars{
+                margin-bottom: 10px;
+            }
+
+            .info{
+                display: flex;
+                margin-bottom: 5px;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            span{
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .line{
+                height: 5px;
+                width: 100%;
+                background-color: $black;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background: orange;
+                }
+            }
+            .html::before{
+                width: 70%;
+            }
+            .css::before{
+                width: 70%;
+            }
+            .JavaScript::before{
+                width: 50%;
+            }
+            .MSOffice::before{
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+.teams{
+    color: $white;
+    background: $black;
+    .title{
+        &::before{
+            background: $blue;
+        }
+        &::after{
+            content: 'HEI';
+            background: $black;
+
+        }
+    }
+
+    .carousel{
+        .card{
+            background: $dgrey;
+            border-radius: 8px;
+            padding: 25px 35px;
+
+            .box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transition: all 300ms ease;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .text{
+                font-size: 25px;
+                font-weight: 500;
+                margin: 10px 0 7px 0;
+            }
+            img{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                object-position: top;
+                border: 5px solid orange;
+                border-radius: 50%;
+                transition: all 300ms ease;
+            }
+            transition: all 300ms ease;
+            &:hover{
+                background: $blue;
+
+
+                img{
+                    border-color: yellow;
+                }
+            }
+        }
+    }
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius:50% ;
+    border: 2px solid yellow !important;
+    transition: all 300ms ease;
+
+    &.active{
+        width: 35px;
+        border-radius: 16px;
+    }
+
+    &:hover, &.active{
+        background-color: yellow !important;
+    }
+}
+
+
+.contact{
+    .title{
+        &::after{
+            content: 'Kontak Saya';
+        }
+    }
+    .contact-content{
+        .column{
+            width: calc(50% - 30px);
+        }
+        .text{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .left{
+            p{
+                text-align: justify;
+            }
+            .icons{
+                margin: 10px 0;
+            }
+        }
+
+        .row{
+            display: flex;
+            height: 65px;
+            align-items: center;
+            margin-bottom: 10px;
+            .info{
+                margin-left: 30px;
+                .head{
+                    font-weight: 500;
+                }
+                .sub-title{
+                    color: $black;
+                }
+            }
+            i{
+                font-size: 25px;
+                color: $blue;
+            }
+        }
+
+        .right{
+            form{
+                .fields{
+                    display: flex;
+
+                }
+
+
+                .field{
+                    input{
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid $blue;
+                        border-radius: 8px;
+                        outline: none;
+                        padding: 0 15px;
+                        font-size: 17px;
+                        font-family: $poppins;
+
+                    }
+
+
+                }
+
+                .field, &.fields .field{
+                    height: 45px;
+                    width: 100%;
+                    margin-bottom: 15px;
+
+                }
+
+                .button{
+                    height: 47px;
+                    width:170px;
+                    input[type='submit']{
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid $blue;
+                        border-radius: 8px;
+                        outline: none;
+                        padding: 0 15px;
+                        font-size: 17px;
+                        font-family: $poppins;
+                        background: $blue;
+                        color: $white;
+                        cursor: pointer;
+                        transition: all 300ms ease;
+                        &:hover{
+                            background: orange;
+                            color: $black;
+                            border: none;
+
+                        }
+                    }
+                }
+
+                .textarea{
+                    height: 80px;
+                    textarea{
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid $blue;
+                        border-radius: 8px;
+                        outline: none;
+                        padding: 0 15px;
+                        font-size: 17px;
+                        font-family: $poppins;
+                        resize: none;
+                        padding-top: 10px;
+    
+                    }
+                }
+
+
+                .name{
+                    margin-right: 10px;
+                }
+                .email{
+                    margin-left: 10px;
+                }
+
+
+
+
+
+            }
+        }
+    }
+}
+
+
+footer{
+    background: $black;
+    padding-top: 20px 23px;
+    color: $white;
+    span{
+        a{
+            color: $blue;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+
+            }
+        }
+    }
+}

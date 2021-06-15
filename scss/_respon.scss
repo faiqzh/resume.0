@@ -1,0 +1,181 @@
+@media (max-width:1104px ){
+    .home .max-width{
+        margin-left: 0
+    }
+    .about .about-content .left img{
+        height: 350px
+    }
+
+};
+
+
+@media (max-width:991px ){
+    .max-width{
+
+        padding :0 50px;
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+        padding: 10px 32px;
+        &:hover{
+            font-size: 20px;
+            padding: 10px 32px;
+        }
+    }
+
+
+
+}
+
+
+
+@media (max-width:947px ){
+
+
+    .menu-btn{
+        color: $white;
+        font-size: 23px;
+        cursor: pointer;
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        background-color: $blue;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 300ms ease-in-out;
+
+
+        li{
+            display: block;
+            a{
+                display: inline-block;
+                margin: 20px 0;
+            }
+        }
+
+
+    }
+
+    .navbar{
+        .menu-btn {
+            i{
+                transition: all 300ms ease-in-out;
+                &.active{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+
+    .home .home-content .text-2{
+        font-size: 70px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+
+        
+    }
+
+    .about .about-content{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .service .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:715px ){
+    .max-width{
+
+        padding :0 23px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 60px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 30px;
+
+    }
+
+    .home .home-content a{
+        font-size: 18px;
+        padding: 8px 28px;
+        &:hover{
+            font-size: 18px;
+            padding: 8px 28px;
+        }
+    }
+
+    .service .serv-content .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 50px
+    }
+
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+};
+
+
+@media (max-width:480px ){
+
+    .home .home-content .text-2{
+        font-size: 50px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+
+    }
+
+    
+    .home .home-content a{
+        font-size: 13px;
+        padding: 6px 24px;
+        &:hover{
+            font-size: 13px;
+            padding: 6px 24px;
+        }
+    }
+
+}
