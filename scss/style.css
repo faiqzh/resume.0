@@ -301,7 +301,7 @@ section .title::after {
 
 .service .title::after {
   background-color: #111;
-  content: 'Saya Bisa';
+  content: 'Saya Pernah';
 }
 
 .service .serv-content .card {
@@ -419,20 +419,24 @@ section .title::after {
   background: orange;
 }
 
-.skills .skills-content .right .html::before {
-  width: 70%;
-}
-
-.skills .skills-content .right .css::before {
-  width: 70%;
-}
-
-.skills .skills-content .right .JavaScript::before {
-  width: 50%;
-}
-
 .skills .skills-content .right .MSOffice::before {
   width: 90%;
+}
+
+.skills .skills-content .right .Photoshop::before {
+  width: 85%;
+}
+
+.skills .skills-content .right .Illustrator::before {
+  width: 75%;
+}
+
+.skills .skills-content .right .HTML::before {
+  width: 65%;
+}
+
+.skills .skills-content .right .JS::before {
+  width: 50%;
 }
 
 .teams {

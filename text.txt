@@ -1,0 +1,17 @@
+<p>
+Situs sederhana ini dibuat sebagai informasi diri serta kompetensi yang saya miliki. 
+Saya merupakan lulusan sarjana dari Jurusan Kimia, Program Studi Pendidikan Kimia Kelas Internasional, Uniersitas Negeri Makassar. 
+Saya adalah seorang yang disiplin, jujur, dan cepat dalam mempelajari hal-hal baru. 
+Kelebihan saya yaitu, mampu mengoperasikan komputer dengan baik, memiliki pengalaman kerja dalam bidang pendidikan, memiliki pengalaman organisasi,
+dan mampu menggunakan Bahasa Inggris secara lisan maupun tulisan. 
+Saya sangat tertarik pada bidang pendidikan, kimia, dan pengolahan data.
+
+</p>
+
+
+
+<p>
+Saya terampil dalam mengoperasikan komputer terutama aplikasi pengolahan data, dan pengetikan. 
+Aplikasi komputer yang saya kuasai diantaranya Microsoft Office (Word, Excel, PowerPoint), Adobe Photoshop, Adobe Illustrator, dan IBM SPSS.
+Selain itu saya juga mengetahui mengenai dasar-dasar HTML, CSS, JavaScript, dan bahasa pemrograman Python terkhusus modul Pandas.
+</p>

@@ -280,7 +280,7 @@ section{
         }
         &::after{
             background-color: $black;
-            content: 'Saya Bisa';
+            content: 'Saya Pernah';
         }
     }
     .serv-content{
@@ -400,17 +400,20 @@ section{
                     background: orange;
                 }
             }
-            .html::before{
-                width: 70%;
-            }
-            .css::before{
-                width: 70%;
-            }
-            .JavaScript::before{
-                width: 50%;
-            }
             .MSOffice::before{
                 width: 90%;
+            }
+            .Photoshop::before{
+                width: 85%;
+            }
+            .Illustrator::before{
+                width: 75%;
+            }
+            .HTML::before{
+                width: 65%;
+            }
+            .JS::before{
+                width: 50%;
             }
         }
     }
