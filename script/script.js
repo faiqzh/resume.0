@@ -21,7 +21,15 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active');
         $('.menu-btn i').toggleClass('active');
+
     });
+
+    $('.service .card').click(function(){
+        $('.popup').toggleClass('hidden');
+    })
+    $('.popup i').click(function(){
+        $('.popup').toggleClass('hidden');
+    })
 
 
     //typing animation

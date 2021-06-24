@@ -301,14 +301,17 @@ section .title::after {
 
 .service .title::after {
   background-color: #111;
-  content: 'Saya Pernah';
+  content: '';
 }
 
 .service .serv-content .card {
-  width: calc(33% - 20px);
+  width: calc(50% - 20px);
   background-color: #2e2e2e;
   padding: 20px 25px;
   border-radius: 8px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
@@ -342,6 +345,11 @@ section .title::after {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+.service .serv-content .card .year {
+  font-size: 20px;
+  margin-bottom: 7px;
 }
 
 .skills .title::after {
@@ -675,6 +683,40 @@ footer span a {
 
 footer span a:hover {
   text-decoration: underline;
+}
+
+.popup {
+  color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 999;
+  visibility: hidden;
+}
+
+.popup.hidden {
+  visibility: visible;
+}
+
+.popup i {
+  color: #2b85da;
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.popup .popup-cont {
+  background-color: #2b85da;
+  margin: 15vh auto;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 8px;
+  padding: 50px;
 }
 
 @media (max-width: 1104px) {
