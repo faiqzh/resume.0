@@ -702,12 +702,15 @@ footer span a:hover {
 }
 
 .popup i {
-  color: #2b85da;
+  color: white;
   position: absolute;
   right: 10vw;
-  top: 10vh;
+  top: 9vh;
   font-size: 26px;
   cursor: pointer;
+  padding: 3px 10px;
+  background-color: #2b85da;
+  border-radius: 8px;
 }
 
 .popup .popup-cont {
