@@ -669,10 +669,11 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.507);
     z-index: 999;
     visibility: hidden;
+    overflow: scroll;
 
     &.hidden{
         visibility: visible;
@@ -694,10 +695,44 @@ footer{
     //opacity: 0.7;
     .popup-cont{
         background-color: $blue;
+        
         margin: 15vh auto ;
         width: 80vw;
-        height: 80vh;
+        height: max-content;
         border-radius: 8px;
         padding: 50px;
+        color: $white;
+        .bulat{
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            color: yellow;
+            background-color: yellow;
+            border-radius: 50%;
+        
+        }
+        
+        .garis{
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: yellow;
+            transform: translate(6px, -7px);
+        }
+    }
+
+
+    .edu-data{
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr ;
+        & .k1, .k3, .k5, .k7{
+            text-align: right;
+        }
+        .kualifikasi{
+            margin: 0 20px;
+
+
+        }
+
     }
 }

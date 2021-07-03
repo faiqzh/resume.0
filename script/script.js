@@ -24,11 +24,17 @@ $(document).ready(function(){
 
     });
 
-    $('.service .card').click(function(){
-        $('.popup').toggleClass('hidden');
+    $('.educard').click(function(){
+        $('.eduhist').toggleClass('hidden');
     })
-    $('.popup i').click(function(){
-        $('.popup').toggleClass('hidden');
+    $('.eduhist i').click(function(){
+        $('.eduhist').toggleClass('hidden');
+    })
+    $('.workcard').click(function(){
+        $('.workhist').toggleClass('hidden');
+    })
+    $('.workhist i').click(function(){
+        $('.workhist').toggleClass('hidden');
     })
 
 
